@@ -38,11 +38,11 @@ pipeline {
         }
         success {
             echo "========Pipeline executed successfully========"
-            slackSend channel: 'gitjenkins', message: 'Job Started '
+            slackSend channel: 'gitjenkins', message: 'successfully '
         }
         failure {
             echo "========Pipeline execution failed========"
-            slackSend channel: 'gitjenkins', message: 'Job Started '
+            slackSend channel: 'gitjenkins', message: 'Failed '
         }
     }
 }
